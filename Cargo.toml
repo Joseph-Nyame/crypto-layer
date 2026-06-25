@@ -1,0 +1,16 @@
+[package]
+name = "crypto-layer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.10.3"
+anyhow = "1.0.102"
+base64 = "0.22.1"
+ed25519-dalek = "2.2.0"
+hkdf = "0.13.0"
+rand = "0.10.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+sha2 = "0.11.0"
+tokio = { version = "1.52.3", features = ["full"] }
