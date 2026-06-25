@@ -16,7 +16,7 @@ fn main() ->anyhow::Result<()>
     let (ciphertext,nonce) = encrypt(msg.as_bytes(),&aes_key)?;
     let signature = sign(&ciphertext, &signing_key);
     let envelope = Envelope {
-        encrypted_payload: ciphertext.to_vec(),
+        encrypted_payload: ciphertext,
         signature,
         nonce,
     };
