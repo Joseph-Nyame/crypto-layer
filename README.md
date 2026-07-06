@@ -6,7 +6,7 @@ This project provides a secure channel for transmitting data. It acts as an end-
 ⚙️ How the Pipeline Works
 The encryption and transmission pipeline follows these steps:
 
-Input: Your data (currently supports string data) is passed into the system.
+Input: Your data (any binary data) is passed into the system.
 
 Signature Generation: A cryptographic signature is generated to ensure data integrity and authenticity.
 
